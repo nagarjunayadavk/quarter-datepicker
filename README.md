@@ -14,7 +14,10 @@ this Quarterly date picker using mui Date Picker.
         else return 'day';  // Default to day for daily
     }, [selectedDateType]);
 
-<QuarterPicker
+
+
+    // Code usge. 
+    <QuarterPicker
           name={'endDate'}
           openTo={datePickerOpenTo}
           value={selectedEndDate ? moment(selectedEndDate) : null}
@@ -23,3 +26,8 @@ this Quarterly date picker using mui Date Picker.
           endDate={endDate}
           defaultQuaterDate={selectedEndDate}
           disableFuture />
+
+
+
+  
+
