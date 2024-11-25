@@ -2,7 +2,17 @@
 this Quarterly date picker using mui Date Picker.
 
 
-#usage
+# Usage
+
+
+
+    // Handle different date picker open selection based on selectedDateType 
+    const datePickerOpenTo = useMemo(() => {
+        if (selectedDateType.value === 'annually') return 'year';   // Open to year for annually
+        else if (selectedDateType.value === 'monthly') return 'month';  // Open to month for monthly
+        // else if (selectedDateType.value === 'quarterly') return 'month';  // Open to month for quarterly (adjust as needed)
+        else return 'day';  // Default to day for daily
+    }, [selectedDateType]);
 
 <QuarterPicker
           name={'endDate'}
